@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "src"
+		}
+	],
+	"settings": {
+		"python.pythonPath": "C:\\Development\\Anaconda3\\envs\\pytest_env\\python.exe"
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Python: debug",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder}/executor.py",
+				"console": "integratedTerminal",
+				"pythonPath": "${command:python.interpreterPath}",
+				"stopOnEntry": false,
+				"args": [
+					// "--verbose", "1",                       // 最小
+					// "--verbose", "2",                       // DEBUG_FULL
+					// "--verbose", "15",                   // FULL
+					"--verbose", "10",                    // TEST
+					// "--verbose", "20",                    // INFO
+				]
+			}
+		]
+	}
+}

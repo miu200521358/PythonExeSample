@@ -1,0 +1,24 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: c01_long_logic_thread debug",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/c01_long_logic_thread/executor.py",
+            "console": "integratedTerminal",
+            "pythonPath": "${command:python.interpreterPath}",
+            "stopOnEntry": false,
+            "args": [
+                // "--verbose", "1",                       // 最小
+                // "--verbose", "2",                       // DEBUG_FULL
+                // "--verbose", "15",                   // FULL
+                "--verbose", "10",                    // TEST
+                // "--verbose", "20",                    // INFO
+            ]
+        }
+    ]
+}
